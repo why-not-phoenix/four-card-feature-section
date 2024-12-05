@@ -1,0 +1,162 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.17rem 0 4.1rem;
+    width: 100vw;
+}
+
+h1, h2 {
+    font-size: 1.63rem;
+}
+
+h2, h3 {
+    color: hsl(234, 12%, 34%);
+}
+
+p {
+    font-weight: 400;
+}
+
+img {
+    width: 3.8rem;
+    align-self: flex-end;
+}
+
+/* Header Styles */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.page-title {
+    font-weight: 200;
+}
+
+.page-subtitle {
+    font-weight: 600;
+}
+
+/* Main Section Styles */
+main {
+    padding: 0.3rem 2.17rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+section {
+    border-radius: 5px 5px 10px 10px;
+}
+
+.section-breaker {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.section-content {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    font-size: 0.87rem;
+    line-height: 1.67rem;
+}
+
+.sub-heading {
+    font-size: 1.3rem;
+}
+
+/* Styling for colored overhead shadow for each section */
+.supervisor-section {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 0 -6.5px hsl(180, 62%, 55%) inset;
+}
+
+.team-builder-section {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 0 -6.5px hsl(0, 78%, 62%) inset;
+}
+
+.karma-section {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 0 -6.5px hsl(34, 97%, 64%) inset;
+}
+
+.calculator-section {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 0 -6.5px hsl(212, 86%, 64%) inset;
+}
+
+/* Attribution */
+.attribution {
+    font-size: 0.73rem; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Larger Screen Styles */
+@media (min-width: 60rem) {
+    body {
+        padding: 3.17rem 0;
+    }
+
+    main {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        max-width: 78.67rem;
+    }
+
+    h1, h2 {
+        font-size: 2.42rem;
+    }
+
+    h3 {
+        line-height: 2.5rem;
+    }
+
+    img {
+        width: 4.33rem;
+    }
+
+    header {
+        padding: 2.5rem 0 4rem;
+        max-width: 590px;
+    }
+
+    .page-heading-paragraph {
+        font-size: 16.5px;
+    }
+
+    .section-content {
+        gap: 2.67rem;
+    }
+
+    section, .section-breaker {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .section-breaker {
+        display: flex;
+        flex-direction: column; 
+        gap: 2rem;
+    }
+}
